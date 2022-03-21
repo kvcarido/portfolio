@@ -1,0 +1,111 @@
+/*****************/
+/* set variables */
+/*****************/
+
+:root {
+    /* fonts */
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /* colors */
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-teal: #258A78;
+    --clr-neon: #C0DE10;
+    --clr-forest: #056B09;
+    --clr-lightbrown: #A48F86;
+    --clr-darkbrown: #746660;
+    --clr-grid: #F1ECE5;
+
+    /* sizes */
+    --spacer: 1rem;
+    --dbl-spacer: 2rem;
+}
+
+/****************/
+/* an AOK reset */
+/****************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/*******************/
+/* utility classes */
+/*******************/
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}
+
+.extra-space > * + * {
+    margin-top: var(--dbl-spacer);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/******************/
+/* default styles */
+/******************/
+
+body {
+    font-family: var(--ff-roboto);
+    font-weight: 400;
+    background-color: var(--clr-grid);
+    background-image: url(/img/hip-square.png);
+    background-position: fixed;
+    background-repeat: repeat;
+}
