@@ -40,7 +40,7 @@ p,
 fieldset {
   margin: 0;
   padding: 0;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 ol[class],
@@ -94,7 +94,6 @@ body {
 
 .flex {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .center-content {
@@ -105,9 +104,8 @@ body {
 }
 
 .green-underline {
-  text-decoration: underline;
-  text-decoration-thickness: 0.3rem;
-  text-decoration-color: var(--clr-neon);
+  border-bottom: var(--clr-neon) 0.3rem solid;
+  display: inline-block;
 }
 
 .outline {
@@ -132,8 +130,11 @@ a {
   text-decoration: none;
   font-weight: 700;
   color: var(--clr-darkbrown);
-  transition: color .35s ease;
+  letter-spacing: 1px;
+}
 
+a:hover {
+  border-bottom: var(--clr-lightbrown) 0.15rem solid;
 }
 
 h1 {
@@ -168,6 +169,17 @@ h2 {
   border: 0.125rem solid var(--clr-darkbrown);
 }
 
+img {
+  border-radius: 1rem;
+}
+
+.about__img {
+  max-width: 60%;
+  outline: var(--clr-black) 0.25rem solid;
+  border-radius: 1rem;
+  box-shadow: -1rem 1rem 0 0 var(--clr-forest);
+}
+
 /**********/
 /* layout */
 /**********/
@@ -189,3 +201,4 @@ li {
 section {
   min-height: 100vh;
 }
+
