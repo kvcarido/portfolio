@@ -88,13 +88,30 @@ body {
 
 .container {
   padding: 0 var(--spacer);
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 0 auto;
 }
 
 .flex {
   display: flex;
   /* flex-direction: column; */
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.green-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: var(--clr-neon);
+}
+
+.outline {
+  outline: 1px red solid;
 }
 
 /******************/
@@ -108,4 +125,67 @@ body {
     background-image: url(/img/hip-square.png);
     background-position: fixed;
     background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--clr-darkbrown);
+  transition: color .35s ease;
+
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.hero__subtitle {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+}
+
+.hero__button button {
+  margin-top: var(--dbl-spacer);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--clr-white);
+  background-color: var(--clr-lightbrown);
+  border: 0.125rem solid var(--clr-darkbrown);
+}
+
+/**********/
+/* layout */
+/**********/
+
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacer);
+}
+
+.header__img {
+  max-width: 5rem;
+}
+
+li {
+  margin-left: var(--spacer);
+}
+
+section {
+  min-height: 100vh;
 }

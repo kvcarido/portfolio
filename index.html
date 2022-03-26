@@ -14,41 +14,47 @@
         <title>Kayleen Carido – Creative Developer</title>
     </head>
     <body>
-        <header class="flex">
-            <div class="header__img">
-                <img src="img/steam.png" alt="illustrated dumpling">
+        <header>
+            <div class="header__container flex">
+                <div class="header__img">
+                    <a href="http://localhost:5500">
+                        <img src="img/steam.png" alt="illustrated dumpling">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-item flex">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">process</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">process</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main>
             <!-- HERO -->
-            <section id="hero" class="hero">
-                <div class="container">
-                    <hgroup>
-                        <h1 class="hero__header">Kayleen Carido</h1>
-                        <h2>
-                            I'm a creative developer with a passion for crafting online connections
-                        </h2>
-                    </hgroup>
-                    <div class="hero__button">
-                        <a href="#contact">
-                            <button>Let's Connect</button>
-                        </a>
+            <section id="hero" class="hero flex">
+                <div class="container center-content">
+                    <div class="hero__content">
+                        <hgroup">
+                            <h1 class="hero__header">Kayleen Carido</h1>
+                            <span class="hero__subtitle">
+                                I'm a <strong>creative developer</strong> with a passion for crafting <span class="green-underline">online connections</span>
+                            </span>
+                        </hgroup>
+                        <div class="hero__button">
+                            <a href="#contact">
+                                <button>Let's Connect</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- ABOUT -->
-            <section id="about" class="about">
-                <div class="container">
+            <section id="about" class="about flex">
+                <div class="container center-content">
                     <div class="about__img">
                         <img src="#" alt="" srcset="">
                     </div>
@@ -63,8 +69,8 @@
             </section>
 
             <!-- SELECT WORK -->
-            <section id="select-work" class="select-work">
-                <div class="container">
+            <section id="select-work" class="select-work flex">
+                <div class="container center-content">
                     <!-- Header -->
                     <div class="select-work__header">
                         <h2>Select Work</h2>
@@ -128,8 +134,8 @@
             </section>
 
             <!-- PROCESS -->
-            <section id="process" class="process">
-                <div class="container">
+            <section id="process" class="process flex">
+                <div class="container center-content">
                     <div class="process__header">
                         <h2>Process</h2>
                         <p>
@@ -194,8 +200,8 @@
             </section>
 
             <!-- CONTACT -->
-            <section id="contact" class="contact">
-                <div class="container">
+            <section id="contact" class="contact flex">
+                <div class="container center-content">
                     <div class="contact__header">
                         <h2>Contact</h2>
                     </div>
