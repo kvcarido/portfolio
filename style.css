@@ -138,22 +138,28 @@ a:hover {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--clr-teal);
   text-transform: uppercase;
   letter-spacing: 0.125rem;
 }
 
-h2 {
+h2, footer {
   font-size: 1rem;
   font-weight: 700;
   color: var(--clr-teal);
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  /* display: inline-block; */
+}
+
+strong {
+  font-weight: 400;
 }
 
 .hero__subtitle {
+  margin-top: 4rem;
   font-size: 2.25rem;
   font-weight: 300;
   line-height: 2.25rem;
@@ -165,8 +171,12 @@ h2 {
   padding: 0.5rem;
   border-radius: 1rem;
   color: var(--clr-white);
-  background-color: var(--clr-lightbrown);
-  border: 0.125rem solid var(--clr-darkbrown);
+  background-color: var(--clr-forest);
+  border: 0.125rem solid var(--clr-black);
+}
+
+.icons {
+  color: var(--clr-forest);
 }
 
 img {
@@ -175,10 +185,18 @@ img {
 
 .about__img {
   max-width: 60%;
-  outline: var(--clr-black) 0.25rem solid;
-  border-radius: 1rem;
-  box-shadow: -1rem 1rem 0 0 var(--clr-forest);
+  border: var(--clr-black) 0.25rem solid;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+  box-shadow: -1rem 1rem 0 0 var(--clr-darkbrown);
 }
+
+.contact__icons li {
+  margin: 0;
+  padding-right: 1rem;
+}
+
 
 /**********/
 /* layout */
@@ -202,3 +220,19 @@ section {
   min-height: 100vh;
 }
 
+#about, #select-work, #process, #contact {
+  margin-top: 5rem;
+}
+
+.project {
+  background-color: rgba(250, 238, 208, 0.5);
+  border: var(--clr-black) 0.25rem solid;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.grid-item__header > h3 {
+  margin-left: 1rem;
+}

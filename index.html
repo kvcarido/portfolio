@@ -5,10 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
         
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/37d1fa0009.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="style.css">
         
         <title>Kayleen Carido – Creative Developer</title>
@@ -23,10 +27,10 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-item flex">
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">process</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#select-work">work</a></li>
+                        <li><a href="#process">process</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,7 +41,7 @@
             <section id="hero" class="hero flex">
                 <div class="container center-content">
                     <div class="hero__content">
-                        <hgroup">
+                        <hgroup>
                             <h1 class="hero__header">Kayleen Carido</h1>
                             <span class="hero__subtitle">
                                 I'm a <strong>creative developer</strong> with a passion for crafting <span class="green-underline">online connections</span>
@@ -72,7 +76,7 @@
             <section id="select-work" class="select-work flex">
                 <div class="container center-content extra-space">
                     <!-- Header -->
-                    <div class="select-work__header">
+                    <div class="select-work__header flow-content">
                         <h2>Select Work</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti non voluptas quas rerum accusamus ex repudiandae in officiis perspiciatis ullam cupiditate, molestias, eaque dolorem omnis aliquid voluptate nemo libero.</p>
                     </div>
@@ -135,22 +139,22 @@
 
             <!-- PROCESS -->
             <section id="process" class="process flex">
-                <div class="container center-content">
-                    <div class="process__header">
+                <div class="container center-content extra-space">
+                    <div class="process__header flow-content">
                         <h2>Process</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quibusdam odio dignissimos impedit enim placeat distinctio, eveniet atque excepturi maxime voluptatibus modi reprehenderit repellat nemo, quia repudiandae iste debitis nesciunt?
                         </p>
                     </div>
 
-                    <div class="process__grid">
+                    <div class="process__grid extra-space">
                         <!-- Consultation -->
-                        <div class="grid-item">
-                            <div class="grid-item__icon">
-                                <!-- font awesome icon -->
+                        <div class="grid-item flow-content">
+                            <div class="grid-item__header flex">
+                                    <i class="icons fas fa-comments fa-2x"></i>
+                                <h3 class="green-underline">Consultation</h3>
                             </div>
                             <div class="grid-item__text">
-                                <h3>Consultation</h3>
                                 <p>
                                     Dolor ut cupiditate at magni labore tempore, porro vel provident aperiam non commodi cum sit modi, sequi veritatis quae qui magnam fugiat! Minus provident officiis consequuntur dolores? Provident, eos in.
                                 </p>
@@ -158,12 +162,12 @@
                         </div>
 
                         <!-- Proposal -->
-                        <div class="grid-item">
-                            <div class="grid-item__icon">
-                                <!-- font awesome icon -->
+                        <div class="grid-item flow-content">
+                            <div class="grid-item__header flex">
+                                    <i class="fas fa-file-signature fa-2x icons"></i>
+                                    <h3 class="green-underline">Proposal</h3>
                             </div>
                             <div class="grid-item__text">
-                                <h3>Proposal</h3>
                                 <p>
                                     Dolor ut cupiditate at magni labore tempore, porro vel provident aperiam non commodi cum sit modi, sequi veritatis quae qui magnam fugiat! Minus provident officiis consequuntur dolores? Provident, eos in.
                                 </p>
@@ -171,12 +175,12 @@
                         </div>
                         
                         <!-- Creation -->
-                        <div class="grid-item">
-                            <div class="grid-item__icon">
-                                <!-- font awesome icon -->
+                        <div class="grid-item flow-content">
+                            <div class="grid-item__header">
+                                <i class="fas fa-laptop-code fa-2x icons"></i>
+                                <h3 class="green-underline">Creation</h3>
                             </div>
                             <div class="grid-item__text">
-                                <h3>Creation</h3>
                                 <p>
                                     Dolor ut cupiditate at magni labore tempore, porro vel provident aperiam non commodi cum sit modi, sequi veritatis quae qui magnam fugiat! Minus provident officiis consequuntur dolores? Provident, eos in.
                                 </p>
@@ -184,12 +188,12 @@
                         </div>
                         
                         <!-- Launch & Support -->
-                        <div class="grid-item">
-                            <div class="grid-item__icon">
-                                <!-- font awesome icon -->
+                        <div class="grid-item flow-content">
+                            <div class="grid-item__header">
+                                <i class="fas fa-rocket fa-2x icons"></i>
+                                <h3 class="green-underline">Launch & Support</h3>
                             </div>
-                            <div class="grid-item__text">
-                                <h3>Launch & Support</h3>
+                                <div class="grid-item__text">
                                 <p>
                                     Dolor ut cupiditate at magni labore tempore, porro vel provident aperiam non commodi cum sit modi, sequi veritatis quae qui magnam fugiat! Minus provident officiis consequuntur dolores? Provident, eos in.
                                 </p>
@@ -202,34 +206,29 @@
             <!-- CONTACT -->
             <section id="contact" class="contact flex">
                 <div class="container center-content">
-                    <div class="contact__header">
+                    <div class="contact__text flow-content">
                         <h2>Contact</h2>
-                    </div>
-                    <div class="contact__text">
                         <p>
-                        Eius repellat eum dignissimos unde in excepturi non atque facilis voluptatum eos numquam neque, ipsa mollitia voluptatibus sapiente ut doloribus nesciunt similique. Ullam aliquid sunt voluptas vitae saepe quisquam
-                    </p>
-                    <h3>Find Me Elsewhere</h3>
-                    <ul class="contact__icons">
-                        <li>
+                            Eius repellat eum dignissimos unde in excepturi non atque facilis voluptatum eos numquam neque, ipsa mollitia voluptatibus sapiente ut doloribus nesciunt similique. Ullam aliquid sunt voluptas vitae saepe quisquam
+                        </p>
+                        <h3 class="green-underline">Find Me Elsewhere</h3>
+                        <ul class="contact__icons flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-envelope fa-2x icons"></i>
+                                    </a>
+                                </li>
                             <li>
                                 <a href="#">
-                                    Email
-                                    <!-- FA icon -->
+                                    <i class="fab fa-github fa-2x icons"></i>
                                 </a>
                             </li>
-                        <li>
-                            <a href="#">
-                                GitHub
-                                <!-- FA icon -->
-                            </a>
-                        </li>
-                        <a href="#">
-                            LinkedIn
-                            <!-- FA icon -->
-                        </a>
-                    </li>
-                    </ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin fa-2x icons"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -237,9 +236,9 @@
 
         <footer>
             <div class="container">
-                <div class="footer__text">
+                <div class="footer__text center-content">
                     <p>Design + Code</p>
-                    <p>©️ KVC 2022</p>
+                    <p>&copy; KVC 2022</p>
                 </div>
             </div>
         </footer>
