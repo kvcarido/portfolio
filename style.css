@@ -109,9 +109,6 @@ body {
   display: inline-block;
 }
 
-.outline {
-  outline: 1px red solid;
-}
 
 /******************/
 /* default styles */
@@ -201,6 +198,18 @@ img {
   box-shadow: -1rem 1rem 0 0 var(--clr-darkbrown);
 }
 
+.project__img {
+  max-width: 100%;
+}
+
+.project {
+  flex-direction: column;
+}
+
+.project > * + * {
+  margin-top: var(--dbl-spacer);
+}
+
 .contact__icons li {
   margin: 0;
   padding-right: 1rem;
@@ -274,20 +283,21 @@ section {
     max-width: 55%;
   }
 
+  .project {
+    flex-direction: row-reverse;
+  }
+
+  .project__img {
+    max-width: 40%;
+  }
+
   .process__grid {
     display: flex;
     flex-wrap: wrap;
   }
   
   .grid-item {
-    max-width: 50%;
-    margin-bottom: 2rem;
+    max-width: 45%;
+    margin: 0 2rem 2rem 0;
   }
 }
-
-/* 
-- Copy social media icons to About section
-- lessen negative space between About <> Select Work, Process <> Contact
-- Add another picture in Contact
-- Add a "Scroll Up" Icon when passed Hero section
-*/
