@@ -19,6 +19,7 @@
     /* sizes */
     --spacer: 1rem;
     --dbl-spacer: 2rem;
+    --triple-spacer: 3rem;
 }
 
 /****************/
@@ -245,6 +246,10 @@ section {
   margin-top: 5rem;
 }
 
+.icons__wrapper {
+  margin-top: var(--triple-spacer);
+}
+
 .project {
   background-color: rgba(250, 238, 208, 0.5);
   border: var(--clr-black) 0.25rem solid;
@@ -267,7 +272,10 @@ section {
   margin-bottom: 1rem;
 }
 
+/*****************************/
 /* Tablet and Desktop styles */
+/*****************************/
+
 @media screen and (min-width: 25rem) {
   .about__wrapper {
     display: flex;
