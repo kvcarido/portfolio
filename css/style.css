@@ -110,6 +110,10 @@ body {
   display: inline-block;
 }
 
+.header-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
 
 /******************/
 /* default styles */
@@ -142,16 +146,24 @@ h1 {
   font-weight: 700;
   color: var(--clr-teal);
   text-transform: uppercase;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.25rem;
 }
 
-h2, footer {
-  font-size: 1rem;
+h2 {
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--clr-teal);
   text-transform: uppercase;
-  letter-spacing: 0.125rem;
-  /* display: inline-block; */
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  letter-spacing: 0.5rem;
 }
 
 strong {
@@ -159,7 +171,7 @@ strong {
 }
 
 .hero__subtitle {
-  margin-top: 4rem;
+  margin-top: var(--spacer);
   font-size: 2.25rem;
   font-weight: 300;
   line-height: 2.25rem;
@@ -167,7 +179,7 @@ strong {
 
 .hero__button a {
   display: inline-block;
-  margin-top: var(--dbl-spacer);
+  margin-top: 4rem;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -186,12 +198,16 @@ strong {
   transition: 400ms ease color;
 }
 
+.icons:hover {
+  color: var(--clr-lightbrown);
+}
+
 img {
   border-radius: 1rem;
 }
 
 .about__img {
-  max-width: 60%;
+  max-width: 70%;
   border: var(--clr-black) 0.25rem solid;
   -webkit-border-radius: 1.25rem;
   -moz-border-radius: 1.25rem;
@@ -216,8 +232,12 @@ img {
   padding-right: 1rem;
 }
 
-.icons:hover {
-  color: var(--clr-lightbrown);
+footer {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-darkbrown);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 /**********/
@@ -250,6 +270,10 @@ section {
   margin-top: var(--triple-spacer);
 }
 
+.icons__wrapper > h3 {
+  margin-bottom: var(--spacer);
+}
+
 .project {
   background-color: rgba(250, 238, 208, 0.5);
   border: var(--clr-black) 0.25rem solid;
@@ -277,6 +301,17 @@ section {
 /*****************************/
 
 @media screen and (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    /* margin-top: var(--spacer); */
+    font-size: 4rem;
+    /* font-weight: 300; */
+    line-height: 4rem;
+  }
+
   .about__wrapper {
     display: flex;
     flex-direction: row;
