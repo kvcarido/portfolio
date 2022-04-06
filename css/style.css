@@ -300,15 +300,13 @@ section {
 /* Tablet and Desktop styles */
 /*****************************/
 
-@media screen and (min-width: 25rem) {
+@media screen and (min-width: 30rem) {
   h1 {
     font-size: 2rem;
   }
 
   .hero__subtitle {
-    /* margin-top: var(--spacer); */
     font-size: 4rem;
-    /* font-weight: 300; */
     line-height: 4rem;
   }
 
