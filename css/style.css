@@ -110,6 +110,10 @@ body {
   display: inline-block;
 }
 
+.booking-clients {
+  border-bottom: var(--clr-neon) 0.3rem solid;
+}
+
 .header-text {
   font-size: 1.25rem;
   margin-bottom: 2rem;
