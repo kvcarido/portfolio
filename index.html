@@ -1,284 +1,49 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400&display=swap" rel="stylesheet">
+
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/37d1fa0009.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="css/style.css">
-        
-        <title>Kayleen Carido – Creative Developer</title>
+        <link rel="stylesheet" href="/v2/style.css">
+
+        <title>Kayleen Carido – Creative Developer</title>
     </head>
     <body>
-        <!-- HEADER -->
-        <header>
-            <div class="header__container flex">
-                <div class="header__img">
-                    <a href="#">
-                        <img src="img/steam.png" alt="illustrated dumpling">
-                    </a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__nav-item flex">
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#select-work">work</a></li>
-                        <li><a href="#process">process</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
         <main>
-            <!-- HERO -->
-            <section id="hero" class="hero flex">
-                <div class="container center-content">
-                    <div class="hero__content">
-                        <div class="hero__text">
-                            <h1 class="hero__header">Kayleen Carido</h1>
-                            <p class="hero__subtitle">
-                                I'm a <strong>creative developer</strong> with a passion for crafting <span class="green-underline">online connections</span>
-                            </p>
-                        </div>
-                        <div class="hero__button">
-                            <a href="#contact">Let's Connect</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="container extra-space">
+                <h1>Kayleen Carido</h1>
 
-            <!-- ABOUT -->
-            <section id="about" class="about">
-                <div class="container">
-                    <div class="about__wrapper center-content extra-space">
-                        <div class="about__img">
-                            <img src="img/profile-pic.JPG">
-                        </div>
-    
-                        <div class="about__text flow-content">
-                            <h2>About</h2>
-                            <p class="header-text">
-                                Native New Yorker currently residing in Los Angeles. My sweet spot is where functional, clean code meets simple and intentional design. I'm the happiest when I collaborate with passionate people looking to bring beautiful digital products to life.
-                            </p>
-                            <div class="icons__wrapper">
-                                <h3 class="green-underline">Feeling social? Find me here:</h3>
-                                <ul class="contact__icons flex">
-                                    <li>
-                                        <!-- Mail -->
-                                        <a href="mailto:hello@kayleen.tech">
-                                            <i class="fas fa-envelope fa-2x icons"></i>
-                                        </a>
-                                    </li>
-                                <li>
-                                    <!-- Github -->
-                                    <a href="https://github.com/kvcarido" target="_blank">
-                                        <i class="fab fa-github fa-2x icons"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <!-- LinkedIn -->
-                                    <a href="https://www.linkedin.com/in/kcarido/" target="_blank">
-                                        <i class="fab fa-linkedin fa-2x icons"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <h4>Creative Frontend Developer</h4>
 
-            <!-- SELECT WORK -->
-            <section id="select-work" class="select-work flex">
-                <div class="container center-content extra-space">
-                    <!-- Header -->
-                    <div class="select-work__header flow-content">
-                        <h2>Select Work</h2>
-                        <p class="header-text">
-                            Having an accessible, responsive, and well-designed web presence is one of the best advantages you can give your business. In today’s mobile-first world, over half of all global website traffic is accessed through a mobile device.
-                        </p>
-                    </div>
+                <p>I'm a first-generation Filipina from Queens, New York with a boundless desire to explore and learn. An autodidact since my early days on the internet, my curiosities range within all things frontend, open source, and inclusive digital communities.</p>
+
+                <ul class="flex">
+                    <li>
+                        <a href="mailto:hello@kayleen.tech" target="_blank">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kvcarido" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/kcarido" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/kvcarido" target="_blank">Twitter</a>
+                    </li>
                     
-                    <!-- Projects -->
-                    <div class="select-work__projects extra-space">
-                        <article class="project flex">
-                            <div class="project__img">
-                                <a href="https://hava-nail-spa.netlify.app" target="_blank">
-                                    <img src="img/hava-thumbnail.png">
-                                </a>
-                            </div>
-        
-                            <div class="project__description flow-content">
-                                <h3 class="green-underline">Hava Nail & Spa</h3>
-                                <p>
-                                    Business website for a Seattle-based salon offering nail and skincare services. Consulted and developed redesign of existing website to help streamline user experience. 
-                                </p>
-        
-                                <h4>
-                                    <a href="https://hava-nail-spa.netlify.app" target="_blank">View Site</a>
-                                </h4>
-                            </div>
-                        </article>
-        
-                        <article class="project flex">
-                            <div class="project__img">
-                                <a href="https://kvcarido.github.io/huddle-landing-page/" target="_blank">
-                                    <img src="img/huddle-thumbnail.png">
-                                </a>
-                            </div>
-        
-                            <div class="project__description flow-content">
-                                <h3 class="green-underline">Huddle Community Landing Page</h3>
-                                <p>
-                                    Assisted in converting Huddle's design mockups into a responsive landing page. Developed promotional web pages for a community building platform, and offered on-going support for additional design assets.
-                                </p>
-        
-                                <h4>
-                                    <a href="https://kvcarido.github.io/huddle-landing-page/" target="_blank">View Site</a>
-                                </h4>
-                            </div>
-                        </article>
-        
-                        <article class="project flex">
-                            <div class="project__img">
-                                <a href="#" target="_blank">
-                                    <img src="img/project-placeholder.png">
-                                </a>
-                            </div>
-        
-                            <div class="project__description flow-content">
-                                <h3 class="green-underline">Aurika Thai</h3>
-                                <p>
-                                    Conceptualized and developed web presence for family-owned restaurant in Queens, NYC. Built on the Squarespace CMS coupled with on-going site support and maintenance.
-                                </p>
-        
-                                <h4>
-                                    <a href="#" target="_blank">View Site</a>
-                                </h4>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROCESS -->
-            <section id="process" class="process flex">
-                <div class="container center-content extra-space">
-                    <div class="process__header flow-content">
-                        <h2>Process</h2>
-                        <p class="header-text">
-                            Knowing what to expect when we work together is crucial – here is an overview to my approach and how I ensure a successful delivery. 
-                        </p>
-                    </div>
-
-                    <div class="process__grid">
-                        <!-- Consultation -->
-                        <div class="grid-item flow-content">
-                            <div class="grid-item__header flex">
-                                    <i class="icons fas fa-comments fa-2x"></i>
-                                <h3 class="green-underline">Consultation</h3>
-                            </div>
-                            <div class="grid-item__text">
-                                <p>
-                                    It all starts with a conversation. We'll coordinate time to discuss the details of your project, learn more about your current needs, and talk through solutions tailored for your business.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Proposal -->
-                        <div class="grid-item flow-content">
-                            <div class="grid-item__header flex">
-                                    <i class="fas fa-file-signature fa-2x icons"></i>
-                                    <h3 class="green-underline">Proposal</h3>
-                            </div>
-                            <div class="grid-item__text">
-                                <p>
-                                    A detailed project proposal will be presented, including visual aids and a plan of action. Each suggestion will list a quote and full breakdown. We can fine-tune the details and collaborate on finding the best course of action.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Creation -->
-                        <div class="grid-item flow-content">
-                            <div class="grid-item__header">
-                                <i class="fas fa-laptop-code fa-2x icons"></i>
-                                <h3 class="green-underline">Creation</h3>
-                            </div>
-                            <div class="grid-item__text">
-                                <p>
-                                    After approval and kickoff, clients will receive regular updates on progress and test features. Communication and trust is a top priority when working through the project timeline.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Launch & Support -->
-                        <div class="grid-item flow-content">
-                            <div class="grid-item__header">
-                                <i class="fas fa-rocket fa-2x icons"></i>
-                                <h3 class="green-underline">Launch & Support</h3>
-                            </div>
-                                <div class="grid-item__text">
-                                <p>
-                                    The best part – launching the final product you're 100% satisfied with. Peace of mind is delivered with the completed project in the form of support.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACT -->
-            <section id="contact" class="contact flex">
-                <div class="container center-content">
-                    <div class="contact__text flow-content">
-                        <h2>Contact</h2>
-                        <p class="header-text">
-                            It's my goal to use my expertise in responsive web development to build polished, functional pages for users to interact with your business. <span class="booking-clients">I am currently accepting new clients for April 2022 and onward</span>.
-                        </p>
-                        <p class="header-text">
-                            Got a project in mind? I'd love to hear about your ideas – <a href="mailto:hello@kayleen.tech">send me a note</a> and let's build together.
-                        </p>
-                        <ul class="contact__icons flex">
-                                <li>
-                                    <!-- Mail -->
-                                    <a href="mailto:hello@kayleen.tech">
-                                        <i class="fas fa-envelope fa-2x icons"></i>
-                                    </a>
-                                </li>
-                            <li>
-                                <!-- Github -->
-                                <a href="https://github.com/kvcarido" target="_blank">
-                                    <i class="fab fa-github fa-2x icons"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <!-- LinkedIn -->
-                                <a href="https://www.linkedin.com/in/kcarido/" target="_blank">
-                                    <i class="fab fa-linkedin fa-2x icons"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div class="footer__text center-content">
-                    <p>Design + Code</p>
-                    <p>&copy; KVC 2022</p>
-                </div>
+                    
+                </ul>
             </div>
-        </footer>
+        </main>
     </body>
 </html>
