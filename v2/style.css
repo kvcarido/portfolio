@@ -1,0 +1,151 @@
+/*****************/
+/* set variables */
+/*****************/
+
+:root {
+    /* fonts */
+    --ff-noto: 'Noto Sans Mono', monospace;
+
+    /* colors */
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-green: #5F805A;
+    --clr-blue: #4E78B7;
+    --clr-brown: #AD653D;
+
+    /* sizes */
+    --spacer: 1rem;
+    --dbl-spacer: 2rem;
+    --triple-spacer: 3rem;
+}
+
+/****************/
+/* an AOK reset */
+/****************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+ol[class],
+ul[class] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/*******************/
+/* utility classes */
+/*******************/
+
+.flow-content > * + * {
+    margin-top: var(--spacer);
+}
+
+.extra-space > * + * {
+    margin-top: var(--dbl-spacer);
+}
+
+.container {
+    padding: 0 var(--spacer);
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/******************/
+/* default styles */
+/******************/
+
+body {
+    font-family: var(--ff-noto);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(2.25rem, 4vw, 4rem);
+    font-weight: 200;
+}
+
+h4 {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-weight: 200;
+    color: var(--clr-white);
+    background-color: var(--clr-green);
+    display: inline;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--clr-brown);
+    transition: color 300ms;
+}
+
+a:hover {
+    color: var(--clr-blue);
+    text-decoration: none;
+}
+
+/**********/
+/* layout */
+/**********/
+
+main {
+    margin-top: 10rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-right: 1rem;
+}
